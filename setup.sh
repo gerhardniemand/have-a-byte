@@ -32,9 +32,7 @@ then
 
 	rm setup.sh
 
-	git commit -m 'Removed setup script, this is a leaf node.'
-
-	git add *
+	git commit --all -m 'Removed setup script, this is a leaf node.'
 
 	git push -u origin master
 
