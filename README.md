@@ -1,16 +1,30 @@
-# {{ name of project }}
+# Have a Byte
 
 _Please read the "Getting Started" section if you are unfamiliar with getting the project going._
 
 ## What it's about:
 
-{{ description }}
+#### Some background: 
+
+When we display how much data our clients have moved the source is in bytes. 1 byte is the smallest denomination we store in our database. So if a user have moved 1.5 GB - he has really moved 1610612736 bytes. I'll let you figure out how to work that out on your own ;)
+
+#### What should I do?
+
+Please write a class that will take input of bytes, and convert it to the **nearest** largest "big size". In other words, it it words, if I give you 536870912000 - this works out to 500GB... but if I give you 1319413953331 - this works out to 1.2 TB.
+
+Here are a few examples:
+
+- 500 bytes = 500 B
+- 1024 bytes = 1 KB
+- 1048576 bytes = 1 MB
+- 1356797348675 bytes = 1.234 TB
 
 ### Where the code sits:
 
 You can look at two files:
+
 - play.php: This is the file you'll run using `php play.php` to see the code in action.
-- {{ other files }}
+- You'll see there's an EchoCave test-class already in place. It's simple enough to follow and figure out what and why and where :) If you get stuck though, ask.
 
 ### Testing:
 
