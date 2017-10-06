@@ -1,4 +1,4 @@
 <?php
 include("vendor/autoload.php");
-
-$ping = new \Fun\EchoCave();
+$input = readline("Number in Bytes:");
+$ping = new \Fun\EchoCave($input);
